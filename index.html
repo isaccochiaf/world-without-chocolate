@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A world without chocolate</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,900,900italic' rel='stylesheet' type='text/css'>
+
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+    <style>
+
+
+    </style>
+
+    <script>
+        $(document).ready(function() {
+
+            /* $('.main-in').hide();
+             $('.btn-group button').click(function() {
+                 $('.main-in').fadeIn();
+                 $('.btn').addClass('hide');
+                 $('.titolo').addClass('hide');
+             });*/
+
+            $('.main-in').hide();
+            $('.btn-group button').click(function() {
+                $('.main-in').fadeIn();
+                $('.fade').addClass('animated fadeOutDown');
+                $('.fade-out').addClass('animated fadeOut');
+                $('.main-in').addClass('animated fadeIn');
+
+            });
+
+
+
+            $(".btn").click(function() {
+                var risultato = $(this).data("result");
+                document.getElementById('risultato').innerHTML = risultato;
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!--<img src="img/intro_box.jpg">
+
+<div class="row">
+    <div class="medium-8 medium-centered columns">
+        <p>Traduzione del 1914 di H. Rackham "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" La sezione 1.10.33 del "de Finibus Bonorum et Malorum", scritto da Cicerone nel 45 AC "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat." Traduzione del 1914 di H. Rackham "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+    </div>
+</div>-->
+
+    <div class="questions">
+        <div class="row">
+            <div class="btn-group" data-toggle="buttons-radio">
+
+                <div class="medium-12 columns fade-out">
+                    <img src="img/risp_divider_top.jpg">
+                    <h3>¿ Cuántas toneladas de cacao se estima que se producirán en 2015?</h3>
+                    <img src="img/risp_divider.jpg">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="medium-6 columns">
+                    <div class="small-6 columns fade delay-01">
+                        <button id="btn-post" data-target="post_container" data-result="Correcto!" class="btn btn btn-primary active" type="button">1000 mil toneladas</button>
+                    </div>
+                    <div class="small-6 columns fade delay-02">
+                        <button id="btn-game" data-target="game_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">2000 mil toneladas</button>
+                    </div>
+                </div>
+                <div class="medium-6 columns">
+                    <div class="small-6 columns fade delay-03">
+                        <button id="btn-video" data-target="video_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">4000 mil toneladas</button>
+                    </div>
+                    <div class="small-6 columns fade delay-04">
+                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">5000 mil toneladas</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="small-12 columns main-in delay-05">
+                <div class="container" id="post_container">
+
+                    <h3 id="risultato" class="fade-in">-</h3>
+                    <h5 class="fade-in delay-06">Il consumo mondiale di cioccolao corrisponde a <span>4000 mil toneladas</span>, il peso 16 volte superiore a quello del colosseo.</h5>
+
+                    <br>
+                    <br>
+                    <img src="img/risp_divider.jpg">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="img/risp_colosseum.jpg">
+                    <br>
+                    <br>
+                    <br>
+                    <p>Source: ICCO Quarterly Bulletin of Cocoa Statistics, Vol. XLI, No. 2, Cocoa year 2014/ 2015</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <p>Traduzione del 1914 di H. Rackham "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" La sezione 1.10.33 del "de Finibus Bonorum et Malorum", scritto da Cicerone nel 45 AC "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat." Traduzione del 1914 di H. Rackham "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+
+    </script>
+</body>
+
+</html>
