@@ -1,5 +1,8 @@
+/*---------------QUESTIONS---------------*/
+
 .questions {
-    height: 90%;
+    margin-top: 5%;
+    height: 110%;
     position: relative;
 }
 .btn-group {
@@ -78,4 +81,62 @@
     font-weight: 300;
     font-style: normal;
     font-size: 0.9em
+}
+
+/*---------------QUESTIONS---------------*/
+
+.top-bar-menu {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-bottom: #be3636 solid 1px;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 10px;
+}
+.top-bar-menu ul {
+    text-align: right;
+}
+.top-bar-menu ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 0.85em;
+    color: #a78e6e
+}
+.active-list {
+    border-bottom: 2px solid #be3636
+}
+.cover {
+    margin-top: 10%;
+}
+.names {
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+}
+.names span p {
+    font-size: 1.15em;
+    font-weight: 800;
+}
+.didascalia {
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+.left {
+    float: left;
+    padding: 20px 20px 10px 0
+}
+.title-cover h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0 50px 0
+}
+#brasil,
+#ecuador,
+#india {
+    padding-top: 60px;
 }
