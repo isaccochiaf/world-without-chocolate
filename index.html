@@ -5,6 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A world without chocolate</title>
+
+    <meta name="Title" content="A world without chocolate" />
+    <meta name="og:title" content="A world without chocolate" />
+    <meta name="description" content="" />
+    <meta name="og:description" content="" />
+
+    <meta name="keywords" content="tubercolosis,tubercolosi,investigation,journalism,grant,ejc,tomaso,clavarino,isacco,chiaf">
+    <meta name="robots" content="index,follow">
+
+
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -15,6 +25,7 @@
     <script src="video-js/video.js"></script>
 
     <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src="js/app.js"></script>
 
     <style>
         .vjs-default-skin .vjs-play-progress,
@@ -29,66 +40,7 @@
     </style>
 
     <script>
-        $(document).ready(function() {
 
-
-            $(document).ready(function() {
-                $(document).on("scroll", onScroll);
-
-                //smoothscroll
-                $('a[href^="#"]').on('click', function(e) {
-                    e.preventDefault();
-                    $(document).off("scroll");
-
-                    $('a').each(function() {
-                        $(this).removeClass('active');
-                    })
-                    $(this).addClass('active');
-
-                    var target = this.hash,
-                        menu = target;
-                    $target = $(target);
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top + 2
-                    }, 500, 'swing', function() {
-                        window.location.hash = target;
-                        $(document).on("scroll", onScroll);
-                    });
-                });
-            });
-
-            function onScroll(event) {
-                var scrollPos = $(document).scrollTop();
-                $('.top-bar-menu a').each(function() {
-                    var currLink = $(this);
-                    var refElement = $(currLink.attr("href"));
-                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                        $('.top-bar-menu ul li a').removeClass("active-list");
-                        currLink.addClass("active-list");
-                    } else {
-                        currLink.removeClass("active-list");
-                    }
-                });
-            }
-
-            //--------------------------------Scroll
-
-            $('.main-in').hide();
-            $('.questions').find('button').click(function() {
-                $(this).parents('.questions').find('.main-in').fadeIn();
-                $(this).parents('.questions').find('.fade').addClass('animated fadeOutDown');
-                $(this).parents('.questions').find('.fade-out').addClass('animated fadeOut');
-                $(this).parents('.questions').find('.main-in').addClass('animated fadeIn');
-
-            });
-
-
-
-            $('.questions').find(".btn").click(function() {
-                var risultato = $(this).data("result");
-                $(this).parents('.questions').find('#risultato').html(risultato);
-            });
-        });
 
     </script>
 
@@ -104,7 +56,7 @@
             </div>
             <div class="small-8 columns">
                 <ul>
-                    <li>Chapters:</li>
+                    <li>Capítulos:</li>
                     <li><img src="img/01_ch.jpg"> <a href="#brasil"> Brasil</a></li>
                     <li><img src="img/02_ch.jpg"> <a href="#ecuador"> Ecuador</a></li>
                     <li><img src="img/03_ch.jpg"> <a href="#india"> India</a></li>
@@ -123,7 +75,7 @@
     </div>
     <div class="row">
         <div class="medium-8 medium-centered columns names">
-            <span><p>Monica pelliccia y Daniela Frechero</p></span>
+            <p>Monica pelliccia y Daniela Frechero</p>
             <p>Design by Isacco Chiaf</p>
 
         </div>
@@ -139,8 +91,9 @@
                 <br> ¿De verdad el futuro del cacao se ve tan negro? "El 2020 ha sido solo una construcción mediática, no es un asunto serio para quien trabaja en este sector" declara Pamela Thornton, analista del mercado del cacao. A pesar de esto reconoce varias incógnitas en su futuro. "Este año llegará el fenómeno climático El Niño y veremos una escasez de cacao bastante sustancial, probablemente de 250.000 toneladas, la más alta en varios años. La demanda crece un 2-2,5% cada año, en particular en países como India y China, donde está aumentando la población y la tendencia a reproducir los hábitos de consumo del oeste". El futuro de este fruto es un rompecabezas entre incógnitas relativas al cambio climático como la llegada de El Niño a Ecuador; el incremento del consumo en los populosos países asiáticos, tal es el caso de la India y la transición hacia nuevos modelos de producción, situación que se vive actualmente en Brasil.</p>
             <br>
             <br>
+            <h4>Titolo Grafico</h4>
             <img src="img/chart_01.jpg">
-            <p>Fonte: </p>
+            <p>Fuente: </p>
         </div>
     </div>
 
@@ -150,7 +103,7 @@
 
                 <div class="medium-12 columns fade-out">
                     <img src="img/risp_divider_top.jpg">
-                    <h3>¿Cuántas toneladas de cacao se estima que se producirán en 2015?</h3>
+                    <h3>¿Cuántas toneladas de cacao se estima que se producirán mundialmente en 2015?</h3>
                     <img src="img/risp_divider.jpg">
                     <br>
                     <br>
@@ -159,18 +112,18 @@
 
                 <div class="medium-6 columns">
                     <div class="small-6 columns fade delay-01">
-                        <button id="btn-post" data-target="post_container" data-result="Sbagliato" class="btn btn btn-primary active" type="button">1000 mil toneladas</button>
+                        <button id="btn-post" data-target="post_container" data-result="Incorrecto" class="btn btn btn-primary active" type="button">1000 mil toneladas</button>
                     </div>
                     <div class="small-6 columns fade delay-02">
-                        <button id="btn-game" data-target="game_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">2000 mil toneladas</button>
+                        <button id="btn-game" data-target="game_container" data-result="Incorrecto" class="btn btn btn-primary" type="button">2000 mil toneladas</button>
                     </div>
                 </div>
                 <div class="medium-6 columns">
                     <div class="small-6 columns fade delay-03">
-                        <button id="btn-video" data-target="video_container" data-result="Corecto" class="btn btn btn-primary" type="button">4000 mil toneladas</button>
+                        <button id="btn-video" data-target="video_container" data-result="correcto" class="btn btn btn-primary" type="button">4000 mil toneladas</button>
                     </div>
                     <div class="small-6 columns fade delay-04">
-                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">5000 mil toneladas</button>
+                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Incorrecto" class="btn btn btn-primary" type="button">5000 mil toneladas</button>
                     </div>
                 </div>
 
@@ -183,10 +136,11 @@
                 <div class="container" id="post_container">
 
                     <h3 id="risultato" class="fade-in">-</h3>
-                    <h5 class="fade-in delay-06">La producción mundial de chocolate corresponde a <span>4000 mil toneladas</span>.</h5>
+                    <h5 class="fade-in delay-06">La producción mundial estimada de cacao corresponde a
+ <span>4000 mil toneladas</span>.</h5>
 
 
-                    <h5><span>El peso del Cristo Redentor de Rio de Janeiro.</span></h5>
+                    <h5><span>El peso de 4000 veces el Cristo Redentor de Rio de Janeiro.</span></h5>
                     <br>
                     <br>
                     <img src="img/risp_divider.jpg">
@@ -197,7 +151,7 @@
                     <br>
                     <br>
                     <br>
-                    <p>Source: ICCO Quarterly Bulletin of Cocoa Statistics, Vol. XLI, No. 2, Cocoa year 2014/ 2015</p>
+                    <p>Fuente: ICCO Quarterly Bulletin of Cocoa Statistics, Vol. XLI, No. 2, Cocoa year 2014/15</p>
                 </div>
             </div>
         </div>
@@ -215,7 +169,7 @@
             <br>
             <br>
             <div class="medium-10 medium-centered columns">
-                <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/bar_ecuador.jpg">
+                <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/bar_brasil.jpg">
                     <source src="video/001_flow.mp4" type='video/mp4'>
                     <source src="video/001_flow.webm" type='video/webm'>
                 </video>
@@ -230,18 +184,21 @@
                 <p class="didascalia">Didascalia</p>
                 <br>
                 <p>
-                    Este fruto ha sido justamente el que generó la fortuna de la zona sur de Bahia, entre los grandes latifundistas y las condiciones laborales impuestas a sus trabajadores, con duras jornadas laborales. Brasil era por ese entonces, el segundo exportador mundial de cacao hasta que un acto de bioterrorismo destrozó los cultivos. Culpable fue la Vassoura de Bruxa, hongo amazónico introducido intencionalmente en la región a finales de los años 80. La justicia aún no ha podido poner rostro a los ideadores de tal acción, que tuvo un gran impacto social, económico y ambiental. El 90% de las plantaciones se perdieron. Más de 250.000 trabajadores rurales se quedaron sin trabajo, emigraron a las ciudades y construyeron favelas, en las partes altas de las urbanizaciones. "Algunos hijos del cacao ahora venden crack en las favelas", cuenta Daniel Piotto, profesor de la Universidad Federal do Sul da Bahía.</p>
+                    Este fruto ha sido justamente el que generó la fortuna de la zona sur de Bahia, entre los grandes latifundistas y las condiciones laborales impuestas a sus trabajadores, con duras jornadas laborales. Brasil era por ese entonces, el segundo exportador mundial de cacao hasta que un acto de bioterrorismo destrozó los cultivos. Culpable fue la Vassoura de Bruxa, hongo amazónico introducido intencionalmente en la región a finales de los años 80. La justicia aún no ha podido poner rostro a los ideadores de tal acción, que tuvo un gran impacto social, económico y ambiental. El 90% de las plantaciones se perdieron. Más de 250.000 trabajadores rurales se quedaron sin trabajo, emigraron a las ciudades y construyeron favelas, en las partes altas de las urbanizaciones. "Algunos hijos del cacao ahora venden crack en las favelas", cuenta Daniel Piotto, profesor de la Universidad Federal do Sul da Bahía.
+                    <br> Manuel Anastacio Leandro ha sido uno de los trabajadores que se quedó sin empleo despúes de más de cuarenta años de trabajo en las plantaciones de la zona. Fue justo después de la llegada de la Vassoura de Bruixa que, junto a su esposa y sus 10 hijos, se marcharon a la ciudad de Ilheus, que era el centro económico del Sur de Bahía. Hoy aún vive allí, en el barrio Tedonio Villela y su jardín tiene una planta de cacao en memoria de este pasado. Este fruto no solo lo marcó a nivel lavoral. Su cuerpo quedó afectado por una enfermedad en la piel, producto de los químicos y herbicidas que debían utilizar en las plantaciones, para controlar las enfermedades. Hoy en día Brasil produce cacao principalmente para abastecer el consumo interno. Pero como un ave fénix está resurgiendo de sus cenizas. "Las crisis no siempre son el fin del mundo. Actualmente se puede ver el lado positivo de la Vassoura." explica Gerson Marques, secretario ejecutivo del Instituto Cabruca, organización especializada en desarrollo cacaotero. "Movimientos sociales, pueblos indígenas y cooperativas familiares tuvieron la oportunidad de apropiarse de la producción del cacao, ocupando tierras abandonadas por los latifundistas que se marcharon con deudas o comprándolas a muy bajo precio. Comenzó así la era del chocolate". Movimientos sociales como los Sin Tierra, que hace mas de veinte años ocuparon unas novecientas hectáreas en la zona de Arataca, ya lanzaron su propio chocolate orgánico Terra Vista. Así también lo ha hecho la cooperativa de familias Embaúba que produce su marca. No tienen jefes ni latifundistas que les controlen. Ahora trabajan de forma autoorganizada cuidando de su cacao, desde el árbol hasta la barra de chocolate.
+
+                </p>
                 <img src="img/pic_brasil_04.jpg">
                 <p class="didascalia">Didascalia</p>
                 <br>
-                <p>
+                <p>Un nuevo capitulo ha iniciado también para Glicélia y la comunidad Tupinambá. Con la llegada de la Vassoura de Bruxa tuvieron la oportunidad de empezar a recuperar las tierras. Fueron los Encantados los que aparecieron en sus sueños, indicando que la lucha comenzaría.
+                    <br> Tierras que les habían sido expropiadas por los políticos de la región, en el momento de auge del cacao a comienzos de siglo XX, con la finalidad de venderlas a los futuros latifundistas.
+                    <br> Se trata de un lugar rico en vegetación exuberante, con ríos que la recorren y habitadas por animales como jaguares y cobras. En el año 2010 el gobierno les delimitó unas 47.376 hectáreas, etapa preliminar al reconocimiento de la propiedad. El cacao para esta comunidad ahora es su pilar económico; pero nunca ha dejado de ser protagonista de su historia. "Utilizamos las mazorcas de cacao como única arma de lucha arrojándolas contra la policía que vino a desalojar nuestra aldea con dos helicópteros, ciento ochenta policías y treinta y tres vehículos, acusándonos de esconder armas. Esto fue solo uno de los ataques que sufrimos para defender nuestras tierras", cuenta Glicélia, recordando un episodio de hace siete años, mientras lleva las manos a su panza para arropar lo que su vientre espera, su segundo hijo crece dentro. "Nunca fuimos de otro lugar” concluye la líder indígena, “De aquí, con nuestro cacao, no nos van a sacar".
 
-                    Manuel Anastacio Leandro ha sido uno de los trabajadores que se quedó sin empleo despúes de más de cuarenta años de trabajo en las plantaciones de la zona. Fue justo después de la llegada de la Vassoura de Bruixa que, junto a su esposa y sus 10 hijos, se marcharon a la ciudad de Ilheus, que era el centro económico del Sur de Bahía. Hoy aún vive allí, en el barrio Tedonio Villela y su jardín tiene una planta de cacao en memoria de este pasado. Este fruto no solo lo marcó a nivel lavoral. Su cuerpo quedó afectado por una enfermedad en la piel, producto de los químicos y herbicidas que debían utilizar en las plantaciones, para controlar las enfermedades. Hoy en día Brasil produce cacao principalmente para abastecer el consumo interno. Pero como un ave fénix está resurgiendo de sus cenizas. "Las crisis no siempre son el fin del mundo. Actualmente se puede ver el lado positivo de la Vassoura." explica Gerson Marques, secretario ejecutivo del Instituto Cabruca, organización especializada en desarrollo cacaotero. "Movimientos sociales, pueblos indígenas y cooperativas familiares tuvieron la oportunidad de apropiarse de la producción del cacao, ocupando tierras abandonadas por los latifundistas que se marcharon con deudas o comprándolas a muy bajo precio. Comenzó así la era del chocolate". Movimientos sociales como los Sin Tierra, que hace mas de veinte años ocuparon unas novecientas hectáreas en la zona de Arataca, ya lanzaron su propio chocolate orgánico Terra Vista. Así también lo ha hecho la cooperativa de familias Embaúba que produce su marca. No tienen jefes ni latifundistas que les controlen. Ahora trabajan de forma autoorganizada cuidando de su cacao, desde el árbol hasta la barra de chocolate.
 
                 </p>
             </div>
         </div>
-
         <div class="row">
             <div class="medium-6 columns">
                 <img src="img/pic_brasil_01.jpg">
@@ -252,16 +209,6 @@
                 <p class="didascalia">Didascalia</p>
             </div>
         </div>
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-                <p>Un nuevo capitulo ha iniciado también para Glicélia y la comunidad Tupinambá. Con la llegada de la Vassoura de Bruxa tuvieron la oportunidad de empezar a recuperar las tierras. Fueron los Encantados los que aparecieron en sus sueños, indicando que la lucha comenzaría.
-                    <br> Tierras que les habían sido expropiadas por los políticos de la región, en el momento de auge del cacao a comienzos de siglo XX, con la finalidad de venderlas a los futuros latifundistas.
-                    <br> Se trata de un lugar rico en vegetación exuberante, con ríos que la recorren y habitadas por animales como jaguares y cobras. En el año 2010 el gobierno les delimitó unas 47.376 hectáreas, etapa preliminar al reconocimiento de la propiedad. El cacao para esta comunidad ahora es su pilar económico; pero nunca ha dejado de ser protagonista de su historia. "Utilizamos las mazorcas de cacao como única arma de lucha arrojándolas contra la policía que vino a desalojar nuestra aldea con dos helicópteros, ciento ochenta policías y treinta y tres vehículos, acusándonos de esconder armas. Esto fue solo uno de los ataques que sufrimos para defender nuestras tierras", cuenta Glicélia, recordando un episodio de hace siete años, mientras lleva las manos a su panza para arropar lo que su vientre espera, su segundo hijo crece dentro. "Nunca fuimos de otro lugar” concluye la líder indígena, “De aquí, con nuestro cacao, no nos van a sacar".
-
-
-                </p>
-            </div>
-        </div>
     </section>
 
     <div class="questions">
@@ -270,8 +217,7 @@
 
                 <div class="medium-9 medium-centered columns fade-out">
                     <img src="img/risp_divider_top.jpg">
-                    <h3>En Ecuador, ¿cuántos litros de lluvia se estima que caerán en la estación lluviosa
-por el fenómeno del Niño?</h3>
+                    <h3>En Ecuador, ¿Cuántas toneladas de cacao se estima que se perderán por causa del fenómeno del Niño?</h3>
                     <img src="img/risp_divider.jpg">
                     <br>
                     <br>
@@ -280,18 +226,18 @@ por el fenómeno del Niño?</h3>
 
                 <div class="medium-6 columns">
                     <div class="small-6 columns fade delay-01">
-                        <button id="btn-post" data-target="post_container" data-result="Sbagliato" class="btn btn btn-primary active" type="button">1000 mil toneladas</button>
+                        <button id="btn-post" data-target="post_container" data-result="Incorrecto" class="btn btn btn-primary active" type="button">20 mil toneladas</button>
                     </div>
                     <div class="small-6 columns fade delay-02">
-                        <button id="btn-game" data-target="game_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">2000 mil toneladas</button>
+                        <button id="btn-game" data-target="game_container" data-result="Correcto" class="btn btn btn-primary" type="button">40 mil toneladas</button>
                     </div>
                 </div>
                 <div class="medium-6 columns">
                     <div class="small-6 columns fade delay-03">
-                        <button id="btn-video" data-target="video_container" data-result="Corecto" class="btn btn btn-primary" type="button">4000 mil toneladas</button>
+                        <button id="btn-video" data-target="video_container" data-result="Incorrecto" class="btn btn btn-primary" type="button">80 mil toneladas</button>
                     </div>
                     <div class="small-6 columns fade delay-04">
-                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">5000 mil toneladas</button>
+                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Incorrecto" class="btn btn btn-primary" type="button">100 mil toneladas</button>
                     </div>
                 </div>
 
@@ -304,19 +250,16 @@ por el fenómeno del Niño?</h3>
                 <div class="container" id="post_container">
 
                     <h3 id="risultato" class="fade-in">-</h3>
-                    <h5 class="fade-in delay-06">Il consumo mondiale di cioccolao corrisponde a <span>4000 mil toneladas</span>, .</h5>
-                    <br>
+                    <h5 class="fade-in delay-06">La pérdida de cacao estimada corresponde a <span>40 mil toneladas</span>.</h5>
+
+                    <h5><span>l’equivalente di 113.424 lavate di denti</span></h5>
                     <br>
                     <img src="img/risp_divider.jpg">
                     <br>
-                    <br>
-                    <h5><span>l’equivalente di 113.424 lavate di denti</span></h5>
-                    <br>
-
-                    <img src="img/risp_thoot.jpg">
+                    <img src="img/risp_cargo.jpg">
 
                     <br>
-                    <p>Source: ICCO Quarterly Bulletin of Cocoa Statistics, Vol. XLI, No. 2, Cocoa year 2014/ 2015</p>
+                    <p>Fuente: Asociación Nacional de Exportadores de Cacao, Anecacao</p>
                 </div>
             </div>
         </div>
@@ -386,8 +329,7 @@ por el fenómeno del Niño?</h3>
 
                 <div class="medium-9 medium-centered columns fade-out">
                     <img src="img/risp_divider_top.jpg">
-                    <h3>En Ecuador, ¿cuántos litros de lluvia se estima que caerán en la estación lluviosa
-por el fenómeno del Niño?</h3>
+                    <h3>¿Cuántas toneladas de cacao se estima que se consumirán este año en la India? </h3>
                     <img src="img/risp_divider.jpg">
                     <br>
                     <br>
@@ -396,18 +338,18 @@ por el fenómeno del Niño?</h3>
 
                 <div class="medium-6 columns">
                     <div class="small-6 columns fade delay-01">
-                        <button id="btn-post" data-target="post_container" data-result="Sbagliato" class="btn btn btn-primary active" type="button">1000 mil toneladas</button>
+                        <button id="btn-post" data-target="post_container" data-result="Incorrecto" class="btn btn btn-primary active" type="button">10 mil toneladas</button>
                     </div>
                     <div class="small-6 columns fade delay-02">
-                        <button id="btn-game" data-target="game_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">2000 mil toneladas</button>
+                        <button id="btn-game" data-target="game_container" data-result="Incorrecto" class="btn btn btn-primary" type="button">55 mil toneladas</button>
                     </div>
                 </div>
                 <div class="medium-6 columns">
                     <div class="small-6 columns fade delay-03">
-                        <button id="btn-video" data-target="video_container" data-result="Corecto" class="btn btn btn-primary" type="button">4000 mil toneladas</button>
+                        <button id="btn-video" data-target="video_container" data-result="Incorrecto" class="btn btn btn-primary" type="button">115 mil toneladas</button>
                     </div>
                     <div class="small-6 columns fade delay-04">
-                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Sbagliato" class="btn btn btn-primary" type="button">5000 mil toneladas</button>
+                        <button id="btn-giveaway" data-target="giveaway_container" data-result="Correcto" class="btn btn btn-primary" type="button">135 mil toneladas</button>
                     </div>
                 </div>
 
@@ -420,22 +362,16 @@ por el fenómeno del Niño?</h3>
                 <div class="container" id="post_container">
 
                     <h3 id="risultato" class="fade-in">-</h3>
-                    <h5 class="fade-in delay-06">Il consumo mondiale di cioccolao corrisponde a <span>4000 mil toneladas</span>, .</h5>
-                    <br>
+                    <h5 class="fade-in delay-06">El consumo de chocolate estimado en la India corresponde a <span>134.000 toneladas</span></h5>
+                    <h5><span>El peso de 30.000 elefantes asiáticos.</span></h5>
                     <br>
                     <img src="img/risp_divider.jpg">
-                    <br>
-                    <br>
-                    <h5><span>l’equivalente di 30.000
-elefanti indiani</span></h5>
-                    <br>
-                    <br>
                     <br>
                     <img src="img/risp_elephant.jpg">
                     <br>
                     <br>
                     <br>
-                    <p>Source: ICCO Quarterly Bulletin of Cocoa Statistics, Vol. XLI, No. 2, Cocoa year 2014/ 2015</p>
+                    <p>Fuente: Mintel, empresa de estudios de mercado.</p>
                 </div>
             </div>
         </div>
@@ -465,28 +401,20 @@ elefanti indiani</span></h5>
         <div class="row">
             <div class="medium-8 medium-centered columns">
                 <p><span class="firstcharacter">D</span>esde el cacao al chocolate, en la otra punta del globo terráqueo, se encuentran los nuevos, y probablemente inesperados, consumidores. Como Rekha Pawao, joven profesora de 24 años que trabaja en el suburbio de Navi Mumbai. Donde 50.000 personas viven en barracas, pequeñas casas de láminas o de construcción que no miden más de cinco metros cuadrados. Ella suele comprar mini-paquetes de chocolate, en el quiosco próximo a la escuela, para regalarlas a sus hijas durante los días festivos. Se trata de porciones de 10 gr que cuestan cinco rupias (0,07 centésimos de euros) y que se pueden encontrar en cualquier quiosco de la ciudad. Su marido trabaja en la extracción de piedras y ella enseña cada mañana a niñas y niños de entre tres y seis años. No hay sillas, ni mesas, ni pizarra. Los estudiantes se sientan todos juntos en el suelo escuchando a Rekha darles clases de hindú, matemáticas e ingles. "Es cierto que la distribución de bienes como el chocolate llega hasta aquí. A pesar de esto, las personas que viven en este slum, como las familias de estas niñas y niños solo lo comen durante ocasiones especiales o festividades. No es algo cotidiano para quienes tengan que garantizarse una comida diaria", declara Rajashree Nayak, de la ong Arphen que gestiona la escuela donde enseña Rekha.
+                    <div class="left">
+                        <img class="left" width="300px" src="img/pic_india_01.jpg">
+                        <p class="didascalia">Didascalia</p>
+                    </div>
+
+                    El chocolate es un deleite que no está al alcance de cada persona pero ha cautivado a buena parte de la sociedad india. El consumo per capita se ha acelerado en los últimos cinco años desde 50gr a 120gr, que multiplicado por los más de 1.200 millones de habitantes del país da el peso de casi 30.000 elefantes asiáticos. Una tendencia que no parece destinada a revertir, en el 2019 este dato aumentará al 60%, según la empresa de estudios de mercado Mintel. El consumo de chocolate con sorpresas en su interior, dirigido a lo más pequeños, es el que mas rápidamente ha crecido con un incremento de un 30% en el ultimo año, según la sociedad de analisis Euromonitor. "En los últimos veinte años con la globalización, el estilo de vida de los indios ha cambiado, sus salarios han aumentado y se ha desarrollado un nuevo sistema de valores, entre el respecto de las tradicciones y la imitación del occidente.” cuenta Pralhad Jogdand, sociólogo de la Universidad de Mumbai. "El chocolate significa modernidad, como vemos en los carteles publicitarios que encontramos aquí en Mumbai donde las actrices de Bollywood son protagonistas".
+
+                    <br> En el barrio turístico de Mumbai, Colaba, se han puesto de moda los chocolate bar o patisserie, donde amigos o familias se reúnen después de las comidas para disfrutar de placeres muy poco autóctonos, cuales pralines y cookies. Como en la famosa patisserie Theobroma donde el 90% de los postres están hechos con chocolate, opción favorita de los paladares locales. Entre las tartas y los pan au chocolate de inspiración francesa la famosa chef Kainaz Messman suele experimentar con chocolates mezclados con sabores autoctonos como el cardamomo verde, el ginger u otras especias.
 
 
-
-
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-                <p>El chocolate es un deleite que no está al alcance de cada persona pero ha cautivado a buena parte de la sociedad india. El consumo per capita se ha acelerado en los últimos cinco años desde 50gr a 120gr, que multiplicado por los más de 1.200 millones de habitantes del país da el peso de casi 30.000 elefantes asiáticos. Una tendencia que no parece destinada a revertir, en el 2019 este dato aumentará al 60%, según la empresa de estudios de mercado Mintel. El consumo de chocolate con sorpresas en su interior, dirigido a lo más pequeños, es el que mas rápidamente ha crecido con un incremento de un 30% en el ultimo año, según la sociedad de analisis Euromonitor. "En los últimos veinte años con la globalización, el estilo de vida de los indios ha cambiado, sus salarios han aumentado y se ha desarrollado un nuevo sistema de valores, entre el respecto de las tradicciones y la imitación del occidente.” cuenta Pralhad Jogdand, sociólogo de la Universidad de Mumbai. "El chocolate significa modernidad, como vemos en los carteles publicitarios que encontramos aquí en Mumbai donde las actrices de Bollywood son protagonistas".
-
-                    <img class="left" width="300px" src="img/pic_india_01.jpg"> En el barrio turístico de Mumbai, Colaba, se han puesto de moda los chocolate bar o patisserie, donde amigos o familias se reúnen después de las comidas para disfrutar de placeres muy poco autóctonos, cuales pralines y cookies. Como en la famosa patisserie Theobroma donde el 90% de los postres están hechos con chocolate, opción favorita de los paladares locales. Entre las tartas y los pan au chocolate de inspiración francesa la famosa chef Kainaz Messman suele experimentar con chocolates mezclados con sabores autoctonos como el cardamomo verde, el ginger u otras especias.
-
-
-                    <br>"El chocolate no es originario de la India. Antes era solo un placer que se permitía de forma esporádica y mi generación ha sido la primera en tener libre aceso a este bien en los ultimos treinta años”, dice la chef Kainaz Messman, “Ahora el chocolate está sustituyendo los típicos dulces indios como regalo en todas las festividades”.
-                    <img src="img/chart_02.jpg">
+                    <br>"El chocolate no es originario de la India. Antes era solo un placer que se permitía de forma esporádica y mi generación ha sido la primera en tener libre aceso a este bien en los ultimos treinta años”, dice la chef Kainaz Messman, “Ahora el chocolate está sustituyendo los típicos dulces indios como regalo en todas las festividades”.</p>
+                <h4>Titolo Grafico</h4>
+                <img src="img/chart_02.jpg">
+                <p>
                     <br> Y no solo los consumidores están contagiados por esta fiebre chocolatera. Hasta las mismas deidades hindúes aman el chocolate, como Lord Muruga. Más al sur de Mumbai, en la ciudad de Allepey se encuentra el templo Thekkan Pazhani Sree. Tanto de mañana como de tarde, los devotos se dirigen allí para homenajear a la divinidad. Aquí, las ofrendas más comúnes son barras de chocolate con leche que los devotos compran antes de entrar allí por un valor de cinco rupias en el quiosco del templo, situado justo en la entrada. Allí los paquetes lilas de chocolate resaltan entre las coloridas coronas de claveles y los collares de semillas. Se trata de la ofrenda favorita entre los estudiantes que quieren asegurarse de superar los exámenes con éxito. Desde los más pequeños, como Anantha Krishnan de seis años hasta Arya, universitaria aspirante a ingeniera de veinte años, todos creen que el chocolate pueda ayudarles a conseguir buenas notas, esperan el día anterior de las pruebas para depositar los paquetes enfrente de la divinidad entre el humo del incienso y los mantras que suenan incesantes.
                     <br>
                     <br> Incluso las deidades del Océano Indico miran con ojos recelosos a las nubes que se están condensando en la otra orilla del mundo, allí donde el Niño está a punto de despertar y peligrar el futuro de este fruto que ha enamorado a los indios, que hace contener la respiración a los ecuatorianos y por el cual cada día luchan Glicélia y su comunidad Tupinambá.
@@ -507,7 +435,6 @@ elefanti indiani</span></h5>
                 <p class="didascalia">Didascalia</p>
             </div>
         </div>
-
     </section>
 
     <footer>
