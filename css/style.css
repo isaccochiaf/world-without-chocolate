@@ -128,7 +128,7 @@
 }
 .left {
     float: left;
-    padding: 20px 20px 10px 0
+    padding: 10px 20px 10px 0
 }
 .title-cover h4 {
     font-family: 'Playfair Display', serif;
@@ -148,4 +148,18 @@
     padding-bottom: 30px;
     font-family: 'Playfair Display', serif;
     font-weight: 700
+}
+#india,
+#ecuador,
+#brasil {
+    padding-top: 58px;
+}
+footer {
+    padding: 50px 0;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+footer p {
+    font-size: 0.9em
 }

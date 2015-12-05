@@ -11,10 +11,20 @@
     <script src="js/vendor/modernizr.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,900,900italic' rel='stylesheet' type='text/css'>
 
+    <link href="video-js/video-js.css" rel="stylesheet">
+    <script src="video-js/video.js"></script>
+
     <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 
     <style>
-
+        .vjs-default-skin .vjs-play-progress,
+        .vjs-default-skin .vjs-volume-level {
+            background-color: #be3636
+        }
+        
+        .vjs-default-skin .vjs-control-bar {
+            font-size: 68%
+        }
 
     </style>
 
@@ -104,7 +114,11 @@
     </div>
     <div class="row">
         <div class="medium-10 medium-centered columns names">
-            <img class="cover" src="img/intro_box.jpg">
+
+            <video id="my_video_4" class="video-js vjs-default-skin cover" controls preload="none" data-setup='{}' poster="img/intro_box.jpg">
+                <source src="video/001_flow.mp4" type='video/mp4'>
+                <source src="video/001_flow.webm" type='video/webm'>
+            </video>
         </div>
     </div>
     <div class="row">
@@ -201,34 +215,28 @@
             <br>
             <br>
             <div class="medium-10 medium-centered columns">
-                <img src="img/bar_brasil.jpg">
+                <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/bar_ecuador.jpg">
+                    <source src="video/001_flow.mp4" type='video/mp4'>
+                    <source src="video/001_flow.webm" type='video/webm'>
+                </video>
             </div>
             <h4>El ave fénix del cacao</h4>
         </div>
 
         <div class="row">
             <div class="medium-8 medium-centered columns">
-                <p><span class="firstcharacter">L</span>as hojas crujen bajo sus pies, Glicélia Jesus Da Silva, una líder del pueblo indígena Tupinambá, camina a paso firme por los senderos repletos de árboles de cacao en Serra do Padeiro, al sur de Bahía. Son tierras ancestrales protegidas por los que llaman Encantados, espíritus de sus antepasados reencarnados en árboles centenarios. Nació en la aldea donde vive desde hace 33 años, es profesora en la escuela y portavoz de la comunidad, que se sustenta principalmente a través de la producción y venta de almendras de cacao.
-                    <br> Este fruto ha sido justamente el que generó la fortuna de la zona sur de Bahia, entre los grandes latifundistas y las condiciones laborales impuestas a sus trabajadores, con duras jornadas laborales. Brasil era por ese entonces, el segundo exportador mundial de cacao hasta que un acto de bioterrorismo destrozó los cultivos. Culpable fue la Vassoura de Bruxa, hongo amazónico introducido intencionalmente en la región a finales de los años 80. La justicia aún no ha podido poner rostro a los ideadores de tal acción, que tuvo un gran impacto social, económico y ambiental. El 90% de las plantaciones se perdieron. Más de 250.000 trabajadores rurales se quedaron sin trabajo, emigraron a las ciudades y construyeron favelas, en las partes altas de las urbanizaciones. "Algunos hijos del cacao ahora venden crack en las favelas", cuenta Daniel Piotto, profesor de la Universidad Federal do Sul da Bahía.
-
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-                <p>Manuel Anastacio Leandro ha sido uno de los trabajadores que se quedó sin empleo despúes de más de cuarenta años de trabajo en las plantaciones de la zona. Fue justo después de la llegada de la Vassoura de Bruixa que, junto a su esposa y sus 10 hijos, se marcharon a la ciudad de Ilheus, que era el centro económico del Sur de Bahía. Hoy aún vive allí, en el barrio Tedonio Villela y su jardín tiene una planta de cacao en memoria de este pasado. Este fruto no solo lo marcó a nivel lavoral. Su cuerpo quedó afectado por una enfermedad en la piel, producto de los químicos y herbicidas que debían utilizar en las plantaciones, para controlar las enfermedades.
-
-                </p>
+                <p><span class="firstcharacter">L</span>as hojas crujen bajo sus pies, Glicélia Jesus Da Silva, una líder del pueblo indígena Tupinambá, camina a paso firme por los senderos repletos de árboles de cacao en Serra do Padeiro, al sur de Bahía. Son tierras ancestrales protegidas por los que llaman Encantados, espíritus de sus antepasados reencarnados en árboles centenarios. Nació en la aldea donde vive desde hace 33 años, es profesora en la escuela y portavoz de la comunidad, que se sustenta principalmente a través de la producción y venta de almendras de cacao.</p>
                 <img src="img/pic_brasil_02.jpg">
                 <p class="didascalia">Didascalia</p>
                 <br>
-                <p>Hoy en día Brasil produce cacao principalmente para abastecer el consumo interno. Pero como un ave fénix está resurgiendo de sus cenizas. "Las crisis no siempre son el fin del mundo. Actualmente se puede ver el lado positivo de la Vassoura." explica Gerson Marques, secretario ejecutivo del Instituto Cabruca, organización especializada en desarrollo cacaotero. "Movimientos sociales, pueblos indígenas y cooperativas familiares tuvieron la oportunidad de apropiarse de la producción del cacao, ocupando tierras abandonadas por los latifundistas que se marcharon con deudas o comprándolas a muy bajo precio. Comenzó así la era del chocolate". Movimientos sociales como los Sin Tierra, que hace mas de veinte años ocuparon unas novecientas hectáreas en la zona de Arataca, ya lanzaron su propio chocolate orgánico Terra Vista. Así también lo ha hecho la cooperativa de familias Embaúba que produce su marca. No tienen jefes ni latifundistas que les controlen. Ahora trabajan de forma autoorganizada cuidando de su cacao, desde el árbol hasta la barra de chocolate.
+                <p>
+                    Este fruto ha sido justamente el que generó la fortuna de la zona sur de Bahia, entre los grandes latifundistas y las condiciones laborales impuestas a sus trabajadores, con duras jornadas laborales. Brasil era por ese entonces, el segundo exportador mundial de cacao hasta que un acto de bioterrorismo destrozó los cultivos. Culpable fue la Vassoura de Bruxa, hongo amazónico introducido intencionalmente en la región a finales de los años 80. La justicia aún no ha podido poner rostro a los ideadores de tal acción, que tuvo un gran impacto social, económico y ambiental. El 90% de las plantaciones se perdieron. Más de 250.000 trabajadores rurales se quedaron sin trabajo, emigraron a las ciudades y construyeron favelas, en las partes altas de las urbanizaciones. "Algunos hijos del cacao ahora venden crack en las favelas", cuenta Daniel Piotto, profesor de la Universidad Federal do Sul da Bahía.</p>
+                <img src="img/pic_brasil_04.jpg">
+                <p class="didascalia">Didascalia</p>
+                <br>
+                <p>
+
+                    Manuel Anastacio Leandro ha sido uno de los trabajadores que se quedó sin empleo despúes de más de cuarenta años de trabajo en las plantaciones de la zona. Fue justo después de la llegada de la Vassoura de Bruixa que, junto a su esposa y sus 10 hijos, se marcharon a la ciudad de Ilheus, que era el centro económico del Sur de Bahía. Hoy aún vive allí, en el barrio Tedonio Villela y su jardín tiene una planta de cacao en memoria de este pasado. Este fruto no solo lo marcó a nivel lavoral. Su cuerpo quedó afectado por una enfermedad en la piel, producto de los químicos y herbicidas que debían utilizar en las plantaciones, para controlar las enfermedades. Hoy en día Brasil produce cacao principalmente para abastecer el consumo interno. Pero como un ave fénix está resurgiendo de sus cenizas. "Las crisis no siempre son el fin del mundo. Actualmente se puede ver el lado positivo de la Vassoura." explica Gerson Marques, secretario ejecutivo del Instituto Cabruca, organización especializada en desarrollo cacaotero. "Movimientos sociales, pueblos indígenas y cooperativas familiares tuvieron la oportunidad de apropiarse de la producción del cacao, ocupando tierras abandonadas por los latifundistas que se marcharon con deudas o comprándolas a muy bajo precio. Comenzó así la era del chocolate". Movimientos sociales como los Sin Tierra, que hace mas de veinte años ocuparon unas novecientas hectáreas en la zona de Arataca, ya lanzaron su propio chocolate orgánico Terra Vista. Así también lo ha hecho la cooperativa de familias Embaúba que produce su marca. No tienen jefes ni latifundistas que les controlen. Ahora trabajan de forma autoorganizada cuidando de su cacao, desde el árbol hasta la barra de chocolate.
 
                 </p>
             </div>
@@ -327,32 +335,30 @@ por el fenómeno del Niño?</h3>
             <br>
             <br>
             <div class="medium-10 medium-centered columns">
-                <img src="img/bar_ecuador.jpg">
+                <video id="my_video_2" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/bar_ecuador.jpg">
+                    <source src="video/001_flow.mp4" type='video/mp4'>
+                    <source src="video/001_flow.webm" type='video/webm'>
+                </video>
             </div>
             <h4>Con El Niño a las puertas de casa</h4>
         </div>
         <div class="row">
             <div class="medium-8 medium-centered columns">
                 <p><span class="firstcharacter">H</span>acia el oeste, a lo largo de la línea del ecuador, el peligro para el futuro del cacao viene desde el mar. Se trata de El Niño, un fenómeno cíclico atmosférico generado por el calentamiento de los océanos que causará lluvias y sequías anormales durante el próximo trimestre. Algo que mantiene en vilo a gran parte de los productores ecuatorianos de cacao. Entre ellos Servio Pachard, cacaotero desde hace cuatro generaciones, originario de la zona de Manabí, situada en el centro-oeste del país. En sus bosques centenarios, donde el cacao convive en armonía con papayas, aguacate y varias frutas tropicales, él produce el chocolate orgánico To'ak, considerado por la revista Forbes como el más caro del mundo; 260 dolares por 50 gr. “Está llegando el Niño. Los pronósticos dicen que será algo similar al de 1997. Fue la peor crisis que he soportado”, dice Servio paseando por el bosque esquivando los árboles que filtran la luz desde las hojas. “ A veces, llovía las veinticuatro horas del día, no había plantas que aguantaran porque no había sol. Fue muy grave para los productores, tardamos entre cinco y siete años para recuperarnos”.
+                    <div class="left">
+                        <img width="300px" src="img/pic_ecuador_01.jpg">
+                        <p class="didascalia">Didascalia</p>
+                    </div>
 
+                    No es solo a causa de fenomenos extremos como El Niño que los cultivadores de la zona de Manabí se tienen que enfrentar con los efectos del cambio climatico, un enemigo que ha entrado a pleno en su cotidianiedad. Los cambios de temperatura han transformado las estaciones y han creado grandes oscilaciones termicas. “El frio que hace por las noches afecta a los pequeños frutos de cacao que se mueren”, declara Servio, “estas temperaturas tan bajas también generan un microclima que favorece la proliferacion de las enfermedades”.
 
-
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="medium-8 medium-centered columns">
-                <p>No es solo a causa de fenomenos extremos como El Niño que los cultivadores de la zona de Manabí se tienen que enfrentar con los efectos del cambio climatico, un enemigo que ha entrado a pleno en su cotidianiedad. Los cambios de temperatura han transformado las estaciones y han creado grandes oscilaciones termicas. “El frio que hace por las noches afecta a los pequeños frutos de cacao que se mueren”, declara Servio, “estas temperaturas tan bajas también generan un microclima que favorece la proliferacion de las enfermedades”.
-                    <br>
                     <br> Algunos cacaoteros creen que El Niño no va a llegar mientras que otros, como Servio y alrededor de la mitad de los cultivadores de su zona, ya han preparado canales de drenaje para evitar inundaciones y controlar la humedad, que podría propagar enfermedades como la Vassoura de bruxa y la Monilla. Servio habla de ello también en la organización a la que pertenece, la Red de guardianes de semillas. Su labor se basa en preservar semillas autóctonas en peligro de extinción, hasta el momento han reunido más de doscientas entre frutales, leguminosas y cereales.
-                    <img class="left" width="300px" src="img/pic_ecuador_01.jpg">
                     <br> “Desde mis bisabuelos que cultivamos cacao nacional de fino aroma, es el sabor de mi infancia. Una variedad especial, que se reconoce por su particular sabor dulce, porque contiene hasta el 17% de sacarosa” dice Servio mientras abre una mazorca de cacao, para comer la pulpa de su interior. “Esta variedad también está amenazada. Ya que muchos prefieren clones, injertos de diferentes variedades de cacao que dan excelentes resultados en volumen y resistencia a enfermedades, mas no en calidad. Pero aquí la gente se resiste a sembrar otro tipo de cacao. Más al sur de Manabí, en los alrededores de la ciudad Guayaquil, corazón economico de Ecuador, se encuentran los cultivadores de la Unión de Organizaciones Campesinas Cacaoteras del Ecuador, UNOCACE.
+                </p>
+
+                <img src="img/pic_ecuador_04.jpg">
+                <p class="didascalia">Didascalia</p>
+                <p>
                     <br> Una entidad que reune a más de mil agricultores con certificación organica de la región. “Estamos renovando nuestras plantaciones para asegurar el futuro del cacao y prepararnos para un momento como este, cuando llegará El Niño” declara Freddy Cabello, gerente de UNOCACE. “ Utilizamos clones de cacao de fino aroma, injertos proporcionados por el Instituto Nacional de Investigación agropecuaria de Ecuador, INIAP, cruzando las variedades más resistentes a las enfermedades” Trabajando en sus plantaciones, los campesinos aguardan a El Niño. Fenómeno que los meterologos anunciaron hace mas de un año, cuando vientos empezaron a soplar desde el oeste hacia las costas de sudamérica, y que ahora está a punto de desatar su fuerza.
 
 
@@ -425,7 +431,7 @@ elefanti indiani</span></h5>
                     <br>
                     <br>
                     <br>
-                    <img width="100%" src="img/risp_elephant.jpg">
+                    <img src="img/risp_elephant.jpg">
                     <br>
                     <br>
                     <br>
@@ -449,7 +455,10 @@ elefanti indiani</span></h5>
             <br>
             <br>
             <div class="medium-10 medium-centered columns">
-                <img src="img/bar_india.jpg">
+                <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/bar_india.jpg">
+                    <source src="video/001_flow.mp4" type='video/mp4'>
+                    <source src="video/001_flow.webm" type='video/webm'>
+                </video>
             </div>
             <h4>La dulce fiebre del oeste</h4>
         </div>
@@ -477,6 +486,7 @@ elefanti indiani</span></h5>
 
 
                     <br>"El chocolate no es originario de la India. Antes era solo un placer que se permitía de forma esporádica y mi generación ha sido la primera en tener libre aceso a este bien en los ultimos treinta años”, dice la chef Kainaz Messman, “Ahora el chocolate está sustituyendo los típicos dulces indios como regalo en todas las festividades”.
+                    <img src="img/chart_02.jpg">
                     <br> Y no solo los consumidores están contagiados por esta fiebre chocolatera. Hasta las mismas deidades hindúes aman el chocolate, como Lord Muruga. Más al sur de Mumbai, en la ciudad de Allepey se encuentra el templo Thekkan Pazhani Sree. Tanto de mañana como de tarde, los devotos se dirigen allí para homenajear a la divinidad. Aquí, las ofrendas más comúnes son barras de chocolate con leche que los devotos compran antes de entrar allí por un valor de cinco rupias en el quiosco del templo, situado justo en la entrada. Allí los paquetes lilas de chocolate resaltan entre las coloridas coronas de claveles y los collares de semillas. Se trata de la ofrenda favorita entre los estudiantes que quieren asegurarse de superar los exámenes con éxito. Desde los más pequeños, como Anantha Krishnan de seis años hasta Arya, universitaria aspirante a ingeniera de veinte años, todos creen que el chocolate pueda ayudarles a conseguir buenas notas, esperan el día anterior de las pruebas para depositar los paquetes enfrente de la divinidad entre el humo del incienso y los mantras que suenan incesantes.
                     <br>
                     <br> Incluso las deidades del Océano Indico miran con ojos recelosos a las nubes que se están condensando en la otra orilla del mundo, allí donde el Niño está a punto de despertar y peligrar el futuro de este fruto que ha enamorado a los indios, que hace contener la respiración a los ecuatorianos y por el cual cada día luchan Glicélia y su comunidad Tupinambá.
@@ -500,34 +510,21 @@ elefanti indiani</span></h5>
 
     </section>
 
-    <script src="js/jquery.waypoints.js"></script>
+    <footer>
+        <div class="row">
+            <div class="medium-7 medium-centered columns">
+                <p>A world wothout chocolate is a web documentary by -- developed with the support of the Innovation in Development Reporting Grant program of the European Journalism Centre (EJC), funded by the Bill and Melinda Gates Foundation. Photography and design: Isacco Chiaf. Translation:</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/videoresize.js"></script>
     <script src="js/inview.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
-
-        /*$(document).ready(function() {
-            //var target = $('li').getData('section');
-            //var target = "#" + $(target).data("target");
-
-            operation(myDiv, brasil);
-
-            var operation = function(mydiv, target) {
-
-
-                var inview = new Waypoint.Inview({
-                    element: $(mydiv),
-                    enter: function() {
-                        $(target).addClass('active-list');
-                    },
-
-                    exited: function() {
-                        $(target).removeClass('active-list');
-                    },
-                })
-            };
-        });*/
 
     </script>
 </body>
