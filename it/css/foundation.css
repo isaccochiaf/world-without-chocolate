@@ -93,7 +93,6 @@ img {
 }
 .left {
     float: left !important;
-    width: 300px;
 }
 .right {
     float: right !important;
