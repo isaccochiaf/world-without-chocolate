@@ -5,6 +5,9 @@
     height: 110%;
     position: relative;
 }
+.questions h3 {
+    padding: 50px;
+}
 .btn-group {
     position: absolute;
     left: 0;
