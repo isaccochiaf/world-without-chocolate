@@ -86,7 +86,7 @@ vjs.options = {
   'width': 300,
   'height': 150,
   // defaultVolume: 0.85,
-  'defaultVolume': 0.00, // The freakin seaguls are driving me crazy!
+  'defaultVolume': 0,00, // The freakin seaguls are driving me crazy!
 
   // Included control sets
   'children': {
@@ -6724,7 +6724,7 @@ vjs.TextTrack.prototype.parseCueTime = function(timeText) {
       hours, minutes, other, seconds, ms;
 
   // Check if optional hours place is included
-  // 00:00:00.000 vs. 00:00.000
+  // 00:00:00,000 vs. 00:00,000
   if (parts.length == 3) {
     hours = parts[0];
     minutes = parts[1];

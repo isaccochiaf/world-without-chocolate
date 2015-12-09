@@ -46,15 +46,15 @@ Copyright (c) 2015 Daniel Eden
   }
 
   40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
+    animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
 
   70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
+    animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
@@ -74,15 +74,15 @@ Copyright (c) 2015 Daniel Eden
   }
 
   40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
+    animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
 
   70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
+    animation-timing-function: cubic-bezier(0.755, 0,050, 0.855, 0,060);
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
@@ -2664,8 +2664,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2682,8 +2682,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2705,8 +2705,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2723,8 +2723,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2746,8 +2746,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2764,8 +2764,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2787,8 +2787,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2805,8 +2805,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   60% {
@@ -2865,8 +2865,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   to {
@@ -2885,8 +2885,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   to {
@@ -2984,8 +2984,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   to {
@@ -3004,8 +3004,8 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0,055, 0.675, 0.190);
   }
 
   to {

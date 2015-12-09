@@ -469,7 +469,7 @@ easily in the skin designer. http://designer.videojs.com/
     /* In order to center the play icon vertically we need to set the line height
      to the same as the button height */
     line-height: 2.6em;
-    text-shadow: 0.05em 0.05em 0.1em #000;
+    text-shadow: 0,05em 0,05em 0.1em #000;
     text-align: center/* Needed for IE8 */
     ;
     position: absolute;

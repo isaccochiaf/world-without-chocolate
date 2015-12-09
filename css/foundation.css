@@ -10,12 +10,12 @@ meta.foundation-mq-small-only {
     width: 0;
 }
 meta.foundation-mq-medium {
-    font-family: "/only screen and (min-width:40.0625em)/";
-    width: 40.0625em;
+    font-family: "/only screen and (min-width:40,0625em)/";
+    width: 40,0625em;
 }
 meta.foundation-mq-medium-only {
-    font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
-    width: 40.0625em;
+    font-family: "/only screen and (min-width:40,0625em) and (max-width:64em)/";
+    width: 40,0625em;
 }
 meta.foundation-mq-large {
     font-family: "/only screen and (min-width:64.0625em)/";
@@ -26,16 +26,16 @@ meta.foundation-mq-large-only {
     width: 64.0625em;
 }
 meta.foundation-mq-xlarge {
-    font-family: "/only screen and (min-width:90.0625em)/";
-    width: 90.0625em;
+    font-family: "/only screen and (min-width:90,0625em)/";
+    width: 90,0625em;
 }
 meta.foundation-mq-xlarge-only {
-    font-family: "/only screen and (min-width:90.0625em) and (max-width:120em)/";
-    width: 90.0625em;
+    font-family: "/only screen and (min-width:90,0625em) and (max-width:120em)/";
+    width: 90,0625em;
 }
 meta.foundation-mq-xxlarge {
-    font-family: "/only screen and (min-width:120.0625em)/";
-    width: 120.0625em;
+    font-family: "/only screen and (min-width:120,0625em)/";
+    width: 120,0625em;
 }
 meta.foundation-data-attribute-namespace {
     font-family: false;
@@ -441,7 +441,7 @@ select {
         float: left;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .medium-push-0 {
         position: relative;
         left: 0;
@@ -1588,7 +1588,7 @@ button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     button,
     .button {
         display: inline-block;
@@ -1907,7 +1907,7 @@ button::-moz-focus-inner {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .button-group.radius.stack-for-small > * {
         display: inline-block;
         margin: 0 -2px;
@@ -2089,7 +2089,7 @@ button::-moz-focus-inner {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .button-group.round.stack-for-small > * {
         display: inline-block;
         margin: 0 -2px;
@@ -2309,7 +2309,7 @@ button.dropdown.secondary:after {
         text-align: justify !important;
     }
 }
-@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+@media only screen and (min-width: 40,0625em) and (max-width: 64em) {
     .medium-only-text-left {
         text-align: left !important;
     }
@@ -2323,7 +2323,7 @@ button.dropdown.secondary:after {
         text-align: justify !important;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .medium-text-left {
         text-align: left !important;
     }
@@ -2365,7 +2365,7 @@ button.dropdown.secondary:after {
         text-align: justify !important;
     }
 }
-@media only screen and (min-width: 90.0625em) and (max-width: 120em) {
+@media only screen and (min-width: 90,0625em) and (max-width: 120em) {
     .xlarge-only-text-left {
         text-align: left !important;
     }
@@ -2379,7 +2379,7 @@ button.dropdown.secondary:after {
         text-align: justify !important;
     }
 }
-@media only screen and (min-width: 90.0625em) {
+@media only screen and (min-width: 90,0625em) {
     .xlarge-text-left {
         text-align: left !important;
     }
@@ -2393,7 +2393,7 @@ button.dropdown.secondary:after {
         text-align: justify !important;
     }
 }
-@media only screen and (min-width: 120.0625em) and (max-width: 6249999.9375em) {
+@media only screen and (min-width: 120,0625em) and (max-width: 6249999.9375em) {
     .xxlarge-only-text-left {
         text-align: left !important;
     }
@@ -2407,7 +2407,7 @@ button.dropdown.secondary:after {
         text-align: justify !important;
     }
 }
-@media only screen and (min-width: 120.0625em) {
+@media only screen and (min-width: 120,0625em) {
     .xxlarge-text-left {
         text-align: left !important;
     }
@@ -2566,7 +2566,7 @@ code {
     color: #333333;
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     font-weight: normal;
-    padding: 0.125rem 0.3125rem 0.0625rem;
+    padding: 0.125rem 0.3125rem 0,0625rem;
 }
 
 /* Lists */
@@ -2707,9 +2707,9 @@ blockquote p {
     text-decoration: none;
     font-weight: bold;
     border: none;
-    padding: 0 0.0625rem;
+    padding: 0 0,0625rem;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     h1,
     h2,
     h3,
@@ -2898,7 +2898,7 @@ blockquote p {
 .reveal-modal >:last-child {
     margin-bottom: 0;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal {
         left: 0;
         margin: 0 auto;
@@ -2907,7 +2907,7 @@ blockquote p {
         width: 80%;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal {
         top: 6.25rem;
     }
@@ -2921,7 +2921,7 @@ blockquote p {
 .reveal-modal.collapse {
     padding: 0;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal.tiny {
         left: 0;
         margin: 0 auto;
@@ -2930,7 +2930,7 @@ blockquote p {
         width: 30%;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal.small {
         left: 0;
         margin: 0 auto;
@@ -2939,7 +2939,7 @@ blockquote p {
         width: 40%;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal.medium {
         left: 0;
         margin: 0 auto;
@@ -2948,7 +2948,7 @@ blockquote p {
         width: 60%;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal.large {
         left: 0;
         margin: 0 auto;
@@ -2957,7 +2957,7 @@ blockquote p {
         width: 70%;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal.xlarge {
         left: 0;
         margin: 0 auto;
@@ -2975,7 +2975,7 @@ blockquote p {
     min-height: 100vh;
     top: 0;
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .reveal-modal.full {
         left: 0;
         margin: 0 auto;
@@ -3138,7 +3138,7 @@ blockquote p {
         clear: both;
     }
 }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40,0625em) {
     .medium-block-grid-1 > li {
         list-style: none;
         width: 100%;
